@@ -110,19 +110,26 @@ fn main() {
 
     // statements do not return values
     // this: let x = (let y = 6); doesnt work
-    // function definitionss are also statements 
+    // function definitionss are also statements
 
     let x = 5;
 
     let y = {
-      let x = 3;
-      x + 1
+        let x = 3;
+        x + 1
     };
 
-    println!("The value of y is: {}",y);
+    println!("The value of y is: {}", y);
+
+    let x = five();
+    println!("The value of x is: {}", x);
 }
 
 // parameters require type annoations
 fn another_function(x: i32, y: i32) {
     println!("THe value of x is {} and teh value of y is {}", x, y);
+}
+
+fn five() -> i32 {
+    5
 }
