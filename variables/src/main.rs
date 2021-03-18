@@ -2,8 +2,8 @@
 fn main() {
   // immutable variables by default
   // takes advantage of concurrency and safety offered by rust
-    let x = 5;
-    println("x is equal to {}",x);
+    let mut x = 5;
+    println!("x is equal to {}",x);
     x = 6;
-    println("x is equal to {}",x);
+    println!("x is equal to {}",x);
 }
