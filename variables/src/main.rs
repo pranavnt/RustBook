@@ -176,12 +176,17 @@ fn main() {
     }
     println!("number: {}", number);
 
+    // going over an array with a hile loop
     let a = [10, 20, 30, 40, 50];
     let mut index = 0;
 
     while index < 5 {
         println!("the value is: {}", a[index]);
         index += 1;
+    }
+
+    for el in a.iter() {
+        println!("el: {}", el);
     }
 }
 
