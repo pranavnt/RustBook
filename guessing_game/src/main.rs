@@ -9,19 +9,18 @@ fn main() {
     println!("Enter your guess!");
 
     // creating immutable variable
-    //
     let secret_number = rand::thread_rng().gen_range(1, 101);
-
-    // initializes mutable String for teh guess
-    // immutable variables are the default in rust
-    // ::new() - new is associated function of the String type. Similar to static methods.
-    // implemented on the type, not instance of type
 
     // loop keyword creates infinite loop
     loop {
         println!("Please enter your guess.");
 
+        // initializes mutable String for teh guess
+        // immutable variables are the default in rust
+        // ::new() - new is associated function of the String type. Similar to static methods.
+        // implemented on the type, not instance of type
         let mut guess = String::new();
+        
         // calls stdin function of io library
         // calls readline method and passing `&mut guess` as parameter
         io::stdin()
