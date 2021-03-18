@@ -188,6 +188,14 @@ fn main() {
     for el in a.iter() {
         println!("el: {}", el);
     }
+
+    // (1..4) will create a range
+    // that is a type in the standard library
+    // rev method will reverse a range
+    for number in (1..4).rev() {
+        println!("{}", number);
+    }
+    println!("TAKEOFF!!!!!!");
 }
 
 // parameters require type annoations
