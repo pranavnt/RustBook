@@ -50,4 +50,17 @@ fn main() {
     let product = 4 * 30; // multiplication
     let quotient = 56.7 / 32.2; // division
     let remainder = 43 % 5; // mod
+
+    // bools!
+
+let t = true;
+let f: bool = false; // w/ type annoation
+
+// chars!
+// specified by single quotes
+// represents more than ascii
+// 4 bytes 
+    let c = 'z'; 
+    let z = 'ℤ';
+    let heart_eyed_cat = '😻';
 }
