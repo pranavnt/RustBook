@@ -121,8 +121,16 @@ fn main() {
 
     println!("The value of y is: {}", y);
 
-    let x = five();
+    let x = plus_one(five());
     println!("The value of x is: {}", x);
+
+    let num = 3;
+
+    if num < 5 {
+        println!("condition was true");
+    } else {
+        println!("condition was false");
+    }
 }
 
 // parameters require type annoations
@@ -132,4 +140,9 @@ fn another_function(x: i32, y: i32) {
 
 fn five() -> i32 {
     5
+}
+
+fn plus_one(x: i32) -> i32 {
+    // if there is a semicolon it will be considered a statement, not an expression (expressions return values)
+    x + 1
 }
