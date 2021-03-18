@@ -136,7 +136,7 @@ fn main() {
 
     // if num will not work -- rust does not convert integers/any other type to booleans
 
-    // not equal to 
+    // not equal to
     if num != 0 {
         println!("number isnt 0");
     }
@@ -153,9 +153,28 @@ fn main() {
     }
 
     let condition = true;
-    let number = if condition {5} else {6};
+    let number = if condition { 5 } else { 6 };
 
-    println!("number = {}", number)
+    println!("number = {}", number);
+
+    let mut counter = 0;
+
+    let result = loop {
+        if counter == 10 {
+            break counter;
+        } else {
+            counter += 1;
+        }
+    };
+
+    println!("result: {}", result);
+
+    let mut number = 3;
+
+    while number != 0 {
+        number -= 1;
+    }
+    println!("number: {}", number);
 }
 
 // parameters require type annoations
