@@ -126,11 +126,36 @@ fn main() {
 
     let num = 3;
 
+    // if expressions
+    // if condition is met, run block of code
     if num < 5 {
         println!("condition was true");
     } else {
         println!("condition was false");
     }
+
+    // if num will not work -- rust does not convert integers/any other type to booleans
+
+    // not equal to 
+    if num != 0 {
+        println!("number isnt 0");
+    }
+
+    // else ifs
+    if num % 4 == 0 {
+        println!("number is divisible by 4")
+    } else if num % 3 == 0 {
+        println!("number is divisible by 3")
+    } else if num % 2 == 0 {
+        println!("number is divisible by 2")
+    } else {
+        println!("number is not divisible by 2, 3, or 4")
+    }
+
+    let condition = true;
+    let number = if condition {5} else {6};
+
+    println!("number = {}", number)
 }
 
 // parameters require type annoations
