@@ -196,11 +196,22 @@ fn main() {
         println!("{}", number);
     }
     println!("TAKEOFF!!!!!!");
+
+    println!("40ºC is {}ºF", c_to_f(40));
+    println!("41ºF is {}ºC", f_to_c(41));
 }
 
 // parameters require type annoations
 fn another_function(x: i32, y: i32) {
     println!("THe value of x is {} and teh value of y is {}", x, y);
+}
+
+fn c_to_f(c: i32) -> f32 {
+    c as f32 * 1.8 + 32.0
+}
+
+fn f_to_c(f: i32) -> f32 {
+    (f as f32 - 32.0)/1.8
 }
 
 fn five() -> i32 {
